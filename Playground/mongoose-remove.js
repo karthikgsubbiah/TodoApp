@@ -8,6 +8,12 @@ var id =
 
 Todo.remove({}).then((result) => {
   console.log(result);
+}, (err) => {
+  console.log(err)
 });
 
-Todo.findByIdAndRemove(id).then()
+Todo.findByIdAndRemove(id).then((result) => {
+  console.log(result);
+}, (err) => {
+  console.log(err);
+});
